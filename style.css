@@ -1,0 +1,121 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+body {
+    /* Constants */
+    /* Colors */
+    --off-white: #f9f9f9;
+
+    /* Typography */
+    --sans: Arial, sans-serif;
+    --serif: Georgia, serif;
+    --heavy-font-weight: 700;
+    --medium-font-weight: 500;
+    --light-font-weight: 300;
+
+    /* Dimensions */
+    --header-height: 64px;
+    --footer-height: 64px;
+
+    --main-height-minus-header: calc(100vh - var(--header-height));
+    --main-height-minus-header-footer: calc(100vh - var(--header-height) - var(--footer-height));
+
+    --min-height-main: var(--main-height-minus-header);
+    --min-height-main-section: var(--main-height-minus-header-footer);
+}
+
+.header {
+    background-color: #f9f9f9;
+    height: var(--header-height);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header .container {
+    flex: 1;
+}
+
+.header h1 {
+    font-size: 1.2rem;
+    font-weight: var(--medium-font-weight);
+}
+
+.main {
+    background-color: var(--off-white);
+    min-height: var(--min-height-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.main .container {
+    width: 100%;
+    --horizontal-padding: 1rem;
+    padding-left: var(--horizontal-padding);
+    padding-right: var(--horizontal-padding);
+}
+
+.main-section {
+    min-height: var(--min-height-main-section);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    gap: 1rem;
+    height: 80%;
+    width: 100%;
+}
+
+.section-title {
+    margin-bottom: 1em;
+}
+
+.section-links {
+    margin-top: 2em;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.link-list-link {
+    padding: 1em;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.link-list-link:hover {
+    background-color: #f0f0f0;
+}
