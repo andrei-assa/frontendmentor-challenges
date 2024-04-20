@@ -1,0 +1,11 @@
+{
+  "name": "frontendmentor-challenges",
+  "version": "1.0.0",
+  "description": "A collection of frontendmentor.io challenges",
+  "keywords": [
+    "frontendmentor",
+    "challenges"
+  ],
+  "author": "Andrei Assa",
+  "license": "ISC"
+}
