@@ -107,12 +107,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    max-width: fit-content;
+}
+
+.link-list-item {
+    width: 100%;
 }
 
 .link-list-link {
     padding: 1em;
     border-radius: 0.5rem;
-    display: inline-block;
+    display: block;
     transition: background-color 0.3s;
 }
 
